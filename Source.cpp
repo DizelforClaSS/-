@@ -381,13 +381,8 @@ void main()
 	}
 	
 
-	int** ResultMatrix = new int* [f];
-	for (int i = 0; i < f; i++)
-	{
-		ResultMatrix[i] = new int[s];
-		for (int j = 0; j < s; j++)
-			ResultMatrix[i][j] = M5[i][j];
-	}
+	int** ResultMatrix = createNullMatrix(f, s);
+	copyMatrix(ResultMatrix, M5, f, s);
 
 	///////////////////////////////////////////////////////////////////////////////
 	///////////////////Вывод результирующей матрицы////////////////////////////////
