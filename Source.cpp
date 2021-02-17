@@ -360,28 +360,26 @@ void main()
 				x++;
 				f = 100;
 			}
-		}
-		if (x == 0 && i < f)
-		{
-			f = i;
-		}
-	}
-	for (int i = 0; i < l; i++)
-	{
-		x = 0;
-		for (int j = 0; j < l; j++)
-		{
+
 			if (M5[j][i] != 0)
 			{
 				x++;
 				s = 100;
 			}
 		}
+
+		if (x == 0 && i < f)
+		{
+			f = i;
+		}
+
 		if (x == 0 && i < s)
 		{
 			s = i;
 		}
+
 	}
+	
 
 	int** ResultMatrix = new int* [f];
 	for (int i = 0; i < f; i++)
